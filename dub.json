@@ -1,0 +1,9 @@
+{
+	"name": "cubf",
+	"authors": [
+		"Richard (Rikki) Andrew Cattermole"
+	],
+	"description": "Chunked Unoriginal Binary Format",
+	"copyright": "Copyright © 2017, Richard (Rikki) Andrew Cattermole",
+	"license": "Boost"
+}
