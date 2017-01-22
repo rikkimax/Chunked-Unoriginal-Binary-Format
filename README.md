@@ -24,7 +24,8 @@ If 'S'tart is selected, then the header will be immediately after the magic valu
 
 If 'E'nd is selected, then the header will be the first chunk at the end of the file.
 
-If 'O' is selected, then an offset of 8 bytes is specified immediately after the magic value. At that offset is 
+If 'O'ffset is selected, then an offset of 8 bytes is specified immediately after the magic value. At that 
+offset is 
 the header chunk (offset == length of chunk).
 
 Examples of the magic value (with offset) are: ``cubfSLE0``, ``cubfOBE068210000``.
