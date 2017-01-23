@@ -5,5 +5,15 @@
 	],
 	"description": "Chunked Unoriginal Binary Format",
 	"copyright": "Copyright © 2017, Richard (Rikki) Andrew Cattermole",
-	"license": "Boost"
+	"license": "Boost",
+	"targetType": "library",
+	"excludedSourceFiles": ["source/app.d"],
+
+	"subPackages": [
+		{
+			"name": "test",
+			"targetType": "executable",
+			"mainSourceFile": "source/app.d"
+		}
+	]
 }
