@@ -65,6 +65,8 @@ final class CUBFWriter {
 
 	void appendHeaderChunk(char[4] name, ubyte[] data) {
 		assert(!finalized);
+		assert(ptrToHeaderLength is null);
+
 		appendChunk(name, data);
 		ptrToHeaderLength = this.data.ptr + this.data.length;
 	}
