@@ -1,7 +1,6 @@
 ﻿module cubf.reader;
 import std.typecons : Tuple, tuple;
 
-
 struct CUBFReader {
 	private {
 		import std.system : Endian, endian;
