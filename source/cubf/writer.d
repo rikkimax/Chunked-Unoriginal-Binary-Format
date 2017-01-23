@@ -63,8 +63,11 @@ final class CUBFWriter {
 		}
 	}
 
+	void appendEndOfChunkInput(ubyte[] data) {
+		appendChunk(cast(char[4])"EOCI", data);
+	}
+
 	void appendHeaderChunk(char[4] name, ubyte[] data) {
-		assert(!finalized);
 		assert(ptrToHeaderLength is null);
 
 		appendChunk(name, data);
