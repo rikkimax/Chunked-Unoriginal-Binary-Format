@@ -33,6 +33,10 @@ final class CUBFWriter {
 		data[15] = 0;
 	}
 
+	~this() {
+		allocator.dispose(data);
+	}
+
 	void appendChunk(char[4] name, ubyte[] data) {
 		import std.bitmanip : nativeToBigEndian, nativeToLittleEndian, littleEndianToNative;
 		import std.digest.crc;
